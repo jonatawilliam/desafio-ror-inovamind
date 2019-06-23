@@ -15,7 +15,7 @@ class QuoteService
     if tags == nil
       quotes_crawled = WebCrawlerService.new(search_tag).execute
       database_save(quotes_crawled)
-      quotes_searched = quotes_crawled
+      quotes_searched = Quote.search_tag(Tag.search_title(search_tag).to_a.first.id)
     else
       quotes_searched = Quote.search_tag(tags.id)
     end
