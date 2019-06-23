@@ -7,8 +7,7 @@ development:
     default:
       database: desafio_ror_inovamind_development
       hosts:
-        - localhost:27017
-      options:
+        - localhost
 test:
   clients:
     default:
