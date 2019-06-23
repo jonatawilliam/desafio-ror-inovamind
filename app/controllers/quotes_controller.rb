@@ -1,6 +1,6 @@
 class QuotesController < ApplicationController
-  before_action :set_quote, only: [:show, :update, :destroy]
-
+  before_action :authorize_request
+  
   # GET /quotes/{search_tag}
   def search_tag
     @quotes = QuoteService.new(params[:search_tag]).execute

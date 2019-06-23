@@ -9,6 +9,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'rack-cors'
 gem 'rack-attack'
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'bcrypt', '3.1.7'
 gem 'jwt'
 gem 'mongoid'
 gem 'nokogiri'
