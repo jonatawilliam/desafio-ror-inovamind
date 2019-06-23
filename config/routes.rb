@@ -1,6 +1,3 @@
 Rails.application.routes.draw do
-  resources :tags
-  resources :authors
-  resources :quotes
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get "/quotes/:search_tag", to: "quotes#search_tag"
 end
