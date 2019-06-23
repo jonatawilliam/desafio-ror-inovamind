@@ -12,6 +12,7 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'bcrypt', '3.1.7'
 gem 'jwt'
 gem 'mongoid'
+gem 'bson_ext'
 gem 'nokogiri'
 
 group :development, :test do
@@ -24,6 +25,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry', '~> 0.12.2'
   gem 'pry-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

@@ -52,6 +52,7 @@ GEM
     bootsnap (1.4.4)
       msgpack (~> 1.0)
     bson (4.5.0)
+    bson_ext (1.5.1)
     builder (3.2.3)
     byebug (11.0.1)
     case_transform (0.2)
@@ -122,6 +123,11 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.2.3)
       actionpack (= 5.2.3)
       activesupport (= 5.2.3)
@@ -159,6 +165,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.0)
   bcrypt (= 3.1.7)
   bootsnap (>= 1.1.0)
+  bson_ext
   byebug
   jwt
   listen (>= 3.0.5, < 3.2)
@@ -170,6 +177,7 @@ DEPENDENCIES
   rack-attack
   rack-cors
   rails (~> 5.2.3)
+  rails_12factor
   spring
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data

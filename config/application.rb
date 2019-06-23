@@ -24,5 +24,6 @@ module DesafioRorInovamind
       end
     end
     config.middleware.use Rack::Attack
+    config.mongoid.logger = Logger.new($stdout, :warn)
   end
 end
