@@ -22,8 +22,6 @@ class QuoteService
     quotes_searched
   end
 
-  private
-
   def database_save(quotes_crawled)
     quotes_crawled.each do |item|
       tags = item["tags"]
